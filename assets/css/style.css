@@ -84,6 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
+  background-color: #efedd6;
   font-family: sans-serif;
 }
 
@@ -121,8 +122,42 @@ li {
 =================================*/
 
 
+.title {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
 
+.box-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
+.box {
+  height: 20vh;
+  width: 15vw;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4682b4;
+  color: #fff;
+  transition: transform 1s ease-in-out;
+}
+
+.reveal { transform: translateX(0); }
+
+.content {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
 
 
 
