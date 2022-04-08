@@ -136,6 +136,7 @@ li {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  overflow: hidden;
 }
 
 .box {
@@ -147,10 +148,17 @@ li {
   align-items: center;
   background-color: #4682b4;
   color: #fff;
-  transition: transform 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(300%);
+  transition: transform .3s ease-in-out;
 }
 
-.reveal { transform: translateX(0); }
+.box:nth-of-type(odd) { transform: translateX(-300%); }
+
+.box.reveal { 
+  opacity: 1;
+  transform: translateX(0); 
+}
 
 .content {
   font-size: 25px;
